@@ -1,0 +1,83 @@
+body {
+    color: black;
+    background: rgb(46, 45, 45);
+    margin: 0px;
+    font-family: "Afacad Flux", sans-serif;
+    margin-bottom: 75px;
+}
+
+header {
+    border-bottom: solid 0.5px rgb(168, 102, 102, 1);
+    padding: 20px;
+    font-size: 31px;
+    color: rgb(168, 102, 102, 1)
+}
+
+.chamada {
+    background: rgb(247, 218, 193, 1);
+    padding-bottom: 75px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.chamada-texto {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+.p {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-size: 20px;
+}
+
+
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+}
+
+
+.roleta-videos {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.categoria-videos  img {
+    opacity: 0.5;
+    height: 150px;
+}
+
+
+
+.categoria-videos  img:hover {
+    opacity: 1.0;
+    height: 200px;
+    transition: all .5s;
+    border: 10px solid #ad1111ea;
+    border: 10px solid transparent;
+    transition: all .5s;
+    cursor: pointer;
+    filter: drop-shadow(15px 10px 5px rgba(255, 0, 0, 0.5));
+    
+}
+
+
+.roleta-videos h2 {
+    color: white;
+    margin-bottom: 75px;
+    margin-right: 75px;
+}
+
+
+
+
+
+
+
+
