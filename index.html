@@ -1,76 +1,167 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KooshFlix</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-
-
     <header>KooshFLIX</header>
+    <a href="https://instagram.com/@getineli.k" class="instagram-button" target="_blank">Instagram</a>
+    <a href="https://www.wattpad.com/user/getineli" class="wattpad-button" target="_blank">Wattpad</a>
+    
+
+
+
+    <div class="container">
+        <h1 class="animated-text">Seja Bem-Vindo ao Meu Site!</h1>
+        <p class="subtext">Passe o mouse sobre o texto acima para um efeito mágico ✨</p>
+    </div>
 
     <section class="chamada">
         <div class="chamada-texto">
-            <h1>HEARTSTOPPER 3: MAIS MADURA! | Análise com spoilers</h1>
+            <h1>HEARTSTOPPER 3: MAIS MADURA! | Análise com spoilers</h1>
             <p>#heartstopper</p>
-            <div class="p">
-            <p>Nossos meninos cresceram… e as temáticas também! A terceira, e aguardada, temporada de “Heartstopper” foi lançada na última quinta-feira (03) pela plataforma Netflix, e prometia ser uma das mais emocionantes. O que de fato se concretiza ser! Baseada na série em quadrinhos de Alice Oseman (que continua como criadora e roteirista no projeto audiovisual), a mais nova temporada aborda questões mais densas e pertinentes, ao passo que não perde nem o cerne criativo da sutileza e inocência, nem o fio da meada.
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
-            </div>
-            </p>
+            <p>Nossos meninos cresceram... e as temáticas também! A terceira temporada de “Heartstopper” foi lançada e aborda questões mais densas, sem perder a sutileza e inocência das temporadas anteriores.</p>
         </div>
-
-
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OzN5rCqVQC0?si=SxVsSztEd2cKoups"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OzN5rCqVQC0?si=SxVsSztEd2cKoups" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Interativo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section id="quiz">
+         <div>
+         
+            <h1>QUANTAS VOCÊ ACERTA???</h1>
+
+        </div>
+            <h2>Quiz de Cinema</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <h3>1. Quem dirigiu o filme "A Origem"?</h3>
+                    <label><input type="radio" name="q1" value="0"> James Cameron</label><br>
+                    <label><input type="radio" name="q1" value="0"> Steven Spielberg</label><br>
+                    <label><input type="radio" name="q1" value="1"> Christopher Nolan</label><br>
+                    <label><input type="radio" name="q1" value="0"> Quentin Tarantino</label>
+                </div>
+                <div class="question">
+                    <h3>2. Qual filme ganhou o Oscar de Melhor Filme em 2020?</h3>
+                    <label><input type="radio" name="q2" value="0"> 1917</label><br>
+                    <label><input type="radio" name="q2" value="1"> Parasita</label><br>
+                    <label><input type="radio" name="q2" value="0"> Coringa</label><br>
+                    <label><input type="radio" name="q2" value="0"> Era uma Vez em Hollywood</label>
+                </div>
+                <div class="question">
+                    <h3>3. Qual personagem é conhecido como "O Cavaleiro das Trevas"?</h3>
+                    <label><input type="radio" name="q3" value="1"> Batman</label><br>
+                    <label><input type="radio" name="q3" value="0"> Super-Homem</label><br>
+                    <label><input type="radio" name="q3" value="0"> Homem-Aranha</label><br>
+                    <label><input type="radio" name="q3" value="0"> Homem de Ferro</label>
+                </div>
+                <button type="button" onclick="submitQuiz()">Enviar</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+    
+
 
 
 
     <section class="roleta-videos">
         <h2>Filmes e Séries</h2>
         <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=hpgLFiDNsnU">
-            <img src="https://img.youtube.com/vi/hpgLFiDNsnU/maxresdefault.jpg" />
-        </a>
-        <a href="https://www.youtube.com/watch?v=P9rEPJ65UIw">
-            <img src="https://img.youtube.com/vi/P9rEPJ65UIw/maxresdefault.jpg" />
-        </a>
-        <a href="https://www.youtube.com/watch?v=K70MooI8vBEE">
-            <img src="https://img.youtube.com/vi/K70MooI8vBE/maxresdefault.jpg" />
-        </a>
-        <a href="https://www.youtube.com/watch?v=ZE5CbXVheJk">
-            <img  src="https://3.bp.blogspot.com/-Uc0nOrjNZBs/V80JW_Vl8hI/AAAAAAAASpc/dCjnmmhAk_wCQOQ2HIdhf1uJWuOP2gxPQCLcB/w1200-h630-p-k-no-nu/20140728.jpg" />        
-        </a>
-        <a href="https://www.youtube.com/watch?v=7yCwv8FjidU">
-            <img src="https://th.bing.com/th/id/OIP.9OlBvHtRvF9upOQZNxtf-wHaEK?rs=1&pid=ImgDetMain" />
-          
-        </a>
+            <a href="https://www.youtube.com/watch?v=hpgLFiDNsnU"><img src="https://img.youtube.com/vi/hpgLFiDNsnU/maxresdefault.jpg" /></a>
+            <a href="https://www.youtube.com/watch?v=P9rEPJ65UIw"><img src="https://img.youtube.com/vi/P9rEPJ65UIw/maxresdefault.jpg" /></a>
+            <a href="https://www.youtube.com/watch?v=K70MooI8vBE"><img src="https://img.youtube.com/vi/K70MooI8vBE/maxresdefault.jpg" /></a>
+        </div>
+    </section>
 
-       
-
-       
-        
-        
-       
+    <section class="chamada1">
+        <div class="chamada-texto1">
+            <h1>ALEX STRANGELOVE</h1>
+            <p class="p1">Alex Strangelove é singelo, divertido e emocionante. O filme aborda temas triviais da adolescência, com sensibilidade e autenticidade, e foi produzido por Ben Stiller.</p>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gMomrrvpCIk?si=96z9_wm-a_bJlTJM" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
 
-  
+    <section id="galeria">
+        <h2>Galeria de Filmes</h2>
+        <div class="galeria-container">
+            <img src="https://images.pexels.com/photos/3048525/pexels-photo-3048525.jpeg" alt="A Origem">
+            <img src="https://images.pexels.com/photos/2440370/pexels-photo-2440370.jpeg" alt="Interestelar">
+            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" alt="Corra!">
+            <img src="https://images.pexels.com/photos/1688520/pexels-photo-1688520.jpeg" alt="Parasita">
+            <img src="https://images.pexels.com/photos/1660136/pexels-photo-1660136.jpeg" alt="A Forma da Água">
+            <img src="https://images.pexels.com/photos/2814283/pexels-photo-2814283.jpeg" alt="Spider-Man: No Way Home">
+            <img src="https://images.pexels.com/photos/4266686/pexels-photo-4266686.jpeg" alt="Barbie">
+            <img src="https://images.pexels.com/photos/3264274/pexels-photo-3264274.jpeg" alt="Oppenheimer">
+            <img src="https://images.pexels.com/photos/2547020/pexels-photo-2547020.jpeg" alt="Pulp Fiction">
+            <img src="https://images.pexels.com/photos/1644078/pexels-photo-1644078.jpeg" alt="Matrix">
+            <img src="https://images.pexels.com/photos/1401537/pexels-photo-1401537.jpeg" alt="Clube da Luta">
+            <img src="https://images.pexels.com/photos/2482809/pexels-photo-2482809.jpeg" alt="Senhor dos Anéis: O Retorno do Rei">
+            <img src="https://images.pexels.com/photos/3035867/pexels-photo-3035867.jpeg" alt="Mad Max: Estrada da Fúria">
+            <img src="https://images.pexels.com/photos/2956182/pexels-photo-2956182.jpeg" alt="Joker">
+        </div>
+    </section>
+    
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou o Kawan, criador deste site. Adoro compartilhar análises de filmes, séries e livros, além de escrever minhas próprias histórias no Wattpad. Bem-vindo(a) ao meu espaço na internet! <3</p>
+    </section>
+
+
+    <section>
+        <h2>Filmes</h2>
+        
+        <div class="flex-container">
+            <div class="video-container">
+                <strong>A Origem (2010)</strong>  
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <strong>Interestelar (2014)</strong> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <div class="flex-container">
+            <div class="video-container">
+                <strong>Corra! (2017)</strong>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DzfpyUB60YY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <strong>Parasita (2019)</strong> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/isOGD_7hNIY" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+   
+    
+        </div>
+    </section>
+    
+
+
 </body>
-
-
-
 </html>

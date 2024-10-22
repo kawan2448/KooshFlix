@@ -1,83 +1,246 @@
+/* Estilo Geral */
 body {
-    color: black;
-    background: rgb(46, 45, 45);
-    margin: 0px;
-    font-family: "Afacad Flux", sans-serif;
-    margin-bottom: 75px;
+    margin: 0;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a57);
+    font-family: 'Afacad Flux', sans-serif;
+    color: white;
 }
 
+/* Header Compacto */
 header {
-    border-bottom: solid 0.5px rgb(168, 102, 102, 1);
-    padding: 20px;
-    font-size: 31px;
-    color: rgb(168, 102, 102, 1)
+    background: rgba(168, 102, 102, 0.8);
+    padding: 10px 0;  
+    font-size: 24px;  
+    text-align: center;
+    border-bottom: 2px solid #ad1111;
 }
 
-.chamada {
-    background: rgb(247, 218, 193, 1);
-    padding-bottom: 75px;
-    padding-top: 35px;
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 50px 0;
     display: flex;
-    justify-content: center;
+    
 }
 
-
-.chamada-texto {
-    margin-right: 3%;
-    margin-left: 3%;
+.animated-text {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+  
 }
 
-
-.p {
-    font-family: "Edu AU VIC WA NT Guides", cursive;
-    font-size: 20px;
+.animated-text:hover {
+    transform: scale(1.1);
 }
 
+/* Chamada */
+.chamada {
+    display: flex;
+    background: rgb(87, 76, 66);
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.video-container iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Roleta de Vídeos */
+.roleta-videos {
+    padding: 20px;
+}
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
-    gap: 5px;
+    gap: 15px;
+    padding: 10px;
 }
 
-
-.roleta-videos {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-.categoria-videos  img {
-    opacity: 0.5;
+.categoria-videos img {
     height: 150px;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.categoria-videos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.7);
+}
+
+/* Chamada 1 */
+.chamada1 {
+    background: rgb(155, 148, 135);
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    /* background-color: #ffffff; */ /* Removido para não ter fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar a seção */
 }
 
 
 
-.categoria-videos  img:hover {
-    opacity: 1.0;
-    height: 200px;
-    transition: all .5s;
-    border: 10px solid #ad1111ea;
-    border: 10px solid transparent;
-    transition: all .5s;
+h3 {
+    margin-top: 20px; /* Espaço acima de cada título de filme */
+    font-size: 1.5rem; /* Tamanho da fonte dos títulos dos filmes */
+}
+
+p {
+    font-size: 1rem; /* Tamanho da fonte das descrições dos filmes */
+    margin: 5px 0 15px; /* Margens para espaçamento */
+}
+
+.video-container {
+    transition: transform 0.3s ease; /* Adiciona transição ao efeito de zoom */
+}
+
+.video-container:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o mouse */
+}
+
+iframe {
+    width: 100%; /* O iframe ocupa toda a largura do contêiner */
+    max-width: 560px; /* Largura máxima para o iframe */
+    height: 315px; /* Altura fixa do iframe */
+    margin: 0 auto; /* Centraliza o iframe */
+    display: block; /* Garante que o iframe seja um bloco */
+    border-radius: 8px; /* Bordas arredondadas no iframe */
+}
+
+.instagram-button {
+    position: fixed;
+    bottom: 20px; /* Distância do botão em relação à parte inferior da tela */
+    right: 20px; /* Distância do botão em relação ao lado direito da tela */
+    background-color: #E4405F; /* Cor de fundo do botão (vermelho do Instagram) */
+    color: white; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno do botão */
+    border-radius: 30px; /* Arredondamento do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+    transition: transform 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+.instagram-button:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    background-color: #C13584; /* Cor de fundo ao passar o mouse */
+}
+
+
+.wattpad-button {
+    position: fixed;
+    bottom: 20px; /* Distância do botão em relação à parte inferior da tela */
+    left: 20px; /* Distância do botão em relação ao lado esquerdo da tela */
+    background-color: #FF500A; /* Cor de fundo do botão (laranja do Wattpad) */
+    color: white; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno do botão */
+    border-radius: 30px; /* Arredondamento do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+    transition: transform 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+.wattpad-button:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    background-color: #E64A19; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+#sobre-mim {
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    color: #333; /* Texto escuro para contraste */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#sobre-mim h2 {
+    font-size: 2.5rem;
+    color: #555; /* Cor leve para o título */
+    margin-bottom: 20px;
+}
+
+#sobre-mim p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #666; /* Cor suave para o texto */
+}
+
+#sobre-mim:hover {
+    background-color: #ececec; /* Efeito ao passar o mouse */
+}
+
+
+
+
+
+
+#quiz {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+
+
+.question {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    filter: drop-shadow(15px 10px 5px rgba(255, 0, 0, 0.5));
-    
 }
 
-
-.roleta-videos h2 {
-    color: white;
-    margin-bottom: 75px;
-    margin-right: 75px;
+button:hover {
+    background-color: #0056b3;
 }
 
+#galeria {
+    text-align: center;
+    margin: 40px 0;
+}
 
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
 
+.galeria-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
 
-
-
-
-
+.galeria-container img:hover {
+    transform: scale(1.05);
+}
