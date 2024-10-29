@@ -25,7 +25,7 @@
             <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="#filmes">Filmes</a>
+            <a href="filmes.html">Filmes</a>
         </li>
         <li>
             <a href="lançamentos.html">Lançamentos</a>
@@ -122,5 +122,56 @@
             </tbody>
         </table>
     </section>
+
+
+
+    <section id="quiz">
+        <h2>Qual é o seu filme favorito?</h2>
+        <form id="form-quiz">
+            <label>
+                <input type="radio" name="filme" value="A Origem"> A Origem
+            </label><br>
+            <label>
+                <input type="radio" name="filme" value="Interestelar"> Interestelar
+            </label><br>
+            <label>
+                <input type="radio" name="filme" value="Corra!"> Corra!
+            </label><br>
+            <label>
+                <input type="radio" name="filme" value="Parasita"> Parasita
+            </label><br>
+            <label>
+                <input type="radio" name="filme" value="Pulp Fiction"> Pulp Fiction
+            </label><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="resultado"></p>
+    </section>
+
+
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <form id="form-depoimento">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" required>
+    
+            <label for="comentario">Seu Depoimento:</label>
+            <textarea id="comentario" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    
+        <h3>Depoimentos Recentes</h3>
+        <ul id="lista-depoimentos"></ul>
+    </section>
+    
+
+    
+
+
+
+
+
+
 </body>
 </html>
